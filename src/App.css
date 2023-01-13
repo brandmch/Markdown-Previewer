@@ -24,9 +24,18 @@ footer {
   padding: 2rem;
 }
 
+p > code {
+  background-color: white;
+}
+
 code {
   background-color: white;
   padding: 0.2rem;
+}
+
+pre {
+  background-color: white;
+  padding: 1rem;
 }
 
 table {
