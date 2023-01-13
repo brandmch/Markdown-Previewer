@@ -10,6 +10,7 @@ const renderText = (text) => {
 const Editor = ({ state, setState }) => {
   return (
     <div className="editor">
+      <h2 style={{ color: "white" }}>Editor</h2>
       <textarea
         rows={15}
         cols={60}
@@ -21,8 +22,11 @@ const Editor = ({ state, setState }) => {
 };
 const Previewer = ({ state }) => {
   return (
-    <div className="previewer">
-      <div dangerouslySetInnerHTML={renderText(state)} />
+    <div>
+      <h2 style={{ color: "white" }}>Previewer</h2>
+      <div className="previewer">
+        <div dangerouslySetInnerHTML={renderText(state)} />
+      </div>
     </div>
   );
 };
